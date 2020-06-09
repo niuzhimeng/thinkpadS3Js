@@ -39,7 +39,9 @@ myChangeFieldAttr4 = () => {
                 },
             };
             window.weaJs.callApi(options).then((res) => {
+
                 if (res.state) {
+
                     callback();
                 } else {
                     window.weaJs.alert('存在经办人尚未签署意见。');
